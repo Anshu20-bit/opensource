@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grant.it - Permission Management System</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('https://brickvisual.com/wp-content/uploads/2024/01/Google-Workspace-Cosy-Home-background.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .main-container {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8); /* Adding some background for better readability */
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .header h1 {
+            color: purple;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-transform: uppercase; /* Make text uppercase */
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="header">
+            <h1>grant.it</h1>
+        </div>
+        <div class="login-box">
+            <form>
+                <div class="form-group">
+                    <label for="roleSelect">Login as:</label>
+                    <select class="form-control" id="roleSelect">
+                        <option>Admin</option>
+                        <option>Co-admin</option>
+                        <option>Student/User</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" class="form-control" id="username" placeholder="Enter your username">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" class="form-control" id="password" placeholder="Enter your password">
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
